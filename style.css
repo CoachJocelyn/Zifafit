@@ -510,3 +510,25 @@
     min-height:320px;
   }
 }
+
+/* ===== Icônes des trois cartes v9 ===== */
+.card-icon{
+  background:#eef4e8 !important;
+  color:#4f7f22 !important;
+  box-shadow:none !important;
+  border-radius:18px !important;
+  width:72px !important;
+  height:72px !important;
+}
+.card-icon svg{
+  width:52px;
+  height:52px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.discover-card{
+  padding-top:28px;
+}
