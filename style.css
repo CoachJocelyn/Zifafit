@@ -851,3 +851,89 @@ nav a[aria-current="page"]{color:#4f7f22}
   .journey-grid{grid-template-columns:1fr}
   .journey-card>p{min-height:auto}
 }
+
+/* ===== Correctif alignement Collection Fondation v13 ===== */
+.foundation-hero-v2{display:none!important}
+.foundation-hero-v3{
+  position:relative;
+  min-height:520px;
+  background:url('fondation-hero-clean.jpg') center/cover no-repeat;
+  overflow:hidden;
+}
+.foundation-hero-shade{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(5,12,7,.94) 0%,rgba(5,12,7,.78) 32%,rgba(5,12,7,.28) 63%,rgba(5,12,7,.05) 100%);
+}
+.foundation-hero-v3 .foundation-hero-copy{
+  position:relative;
+  z-index:2;
+  box-sizing:border-box;
+  width:min(720px,94vw);
+  padding:60px 24px 50px max(34px,5vw);
+}
+.foundation-hero-v3 h1{
+  margin:4px 0 0;
+  font-size:clamp(4rem,8vw,7.4rem);
+  line-height:.9;
+  letter-spacing:-.045em;
+  text-transform:uppercase;
+  color:#f5f0e7;
+}
+.foundation-hero-v3 .foundation-quote{
+  max-width:590px;
+  font-size:clamp(1.18rem,2vw,1.55rem);
+}
+.foundation-hero-v3 .foundation-stats{
+  max-width:660px;
+}
+.journey-grid{
+  align-items:stretch!important;
+}
+.journey-card{
+  display:flex!important;
+  flex-direction:column!important;
+  min-width:0;
+  min-height:390px;
+  padding:18px 15px 14px!important;
+}
+.journey-icon{
+  display:block;
+  width:132px!important;
+  height:132px!important;
+  margin:0 auto 10px!important;
+  object-fit:contain!important;
+  border-radius:50%;
+}
+.journey-card h3{
+  min-height:48px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:5px;
+  margin:0 0 8px!important;
+}
+.journey-card>p{
+  min-height:62px!important;
+  margin:0 auto 8px!important;
+}
+.journey-meta{
+  min-height:36px;
+  margin-top:auto!important;
+}
+.journey-actions{
+  margin-top:8px;
+}
+.journey-button{
+  box-sizing:border-box;
+  min-height:48px!important;
+  flex-direction:column;
+}
+@media(max-width:1200px){
+  .journey-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:680px){
+  .journey-grid{grid-template-columns:1fr!important}
+  .foundation-hero-v3{min-height:600px}
+}

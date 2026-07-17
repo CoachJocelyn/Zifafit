@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+
+<defs>
+  <radialGradient id="bg" cx="38%" cy="28%" r="76%">
+    <stop offset="0%" stop-color="#fffdf8"/>
+    <stop offset="72%" stop-color="#ece4d7"/>
+    <stop offset="100%" stop-color="#d6cbbb"/>
+  </radialGradient>
+  <linearGradient id="dark" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#4d514d"/>
+    <stop offset="55%" stop-color="#202520"/>
+    <stop offset="100%" stop-color="#0c100c"/>
+  </linearGradient>
+  <linearGradient id="green" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#92bf4f"/>
+    <stop offset="55%" stop-color="#4f7f22"/>
+    <stop offset="100%" stop-color="#244b17"/>
+  </linearGradient>
+  <filter id="shadow" x="-35%" y="-35%" width="170%" height="170%">
+    <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#1c2418" flood-opacity=".32"/>
+  </filter>
+</defs>
+
+<circle cx="90" cy="90" r="78" fill="url(#bg)" stroke="#8ca56b" stroke-width="3"/>
+<g filter="url(#shadow)">
+<circle cx="103" cy="43" r="15" fill="url(#dark)"/>
+<path d="M94 61c-22 10-34 25-43 43l20 9c9-17 19-28 34-34l23 12" fill="none" stroke="url(#dark)" stroke-width="16" stroke-linecap="round"/>
+<path d="M53 105l-24 35M80 112l22 29" stroke="url(#dark)" stroke-width="15" stroke-linecap="round"/>
+<g fill="url(#green)" stroke="#203e18" stroke-width="4"><circle cx="42" cy="113" r="13"/><circle cx="71" cy="120" r="13"/></g>
+<path d="M39 113h35" stroke="#111" stroke-width="6"/>
+</g>
+</svg>
