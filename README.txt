@@ -10,3 +10,5 @@ Site officiel de ZifaFit.
 Le site est déployé automatiquement par Cloudflare Pages.
 
 - `forest-bg.jpg` : image de fond de la page d'accueil
+
+Version premium: voile plus léger, logo transparent, ombres, animation douce et boutons améliorés.
