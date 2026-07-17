@@ -8,3 +8,5 @@ Site officiel de ZifaFit.
 - `logo.png` : logo ZifaFit
 
 Le site est déployé automatiquement par Cloudflare Pages.
+
+- `forest-bg.jpg` : image de fond de la page d'accueil
