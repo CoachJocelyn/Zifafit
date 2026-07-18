@@ -1274,14 +1274,14 @@ nav a[aria-current="page"]{color:#4f7f22}
 .pp-body{background:#f8faf6;color:#111}
 .pp-hero{
   position:relative;
-  min-height:700px;
+  min-height:560px;
   display:flex;
   align-items:center;
   overflow:hidden;
-  background-image:url('banniere-zifafit-programme-v23.jpg?v=23');
+  background-image:url('banniere-zifafit-programme-v23.jpg?v=24');
   background-repeat:no-repeat;
   background-position:center center;
-  background-size:cover;
+  background-size:100% auto;
   background-color:#0f1d12;
 }
 .pp-hero-shade{
@@ -1289,10 +1289,10 @@ nav a[aria-current="page"]{color:#4f7f22}
   inset:0;
   background:linear-gradient(
     90deg,
-    rgba(3,12,6,.94) 0%,
-    rgba(3,12,6,.86) 25%,
-    rgba(3,12,6,.52) 42%,
-    rgba(3,12,6,.14) 62%,
+    rgba(3,12,6,.95) 0%,
+    rgba(3,12,6,.88) 24%,
+    rgba(3,12,6,.56) 40%,
+    rgba(3,12,6,.16) 60%,
     rgba(3,12,6,.03) 100%
   );
 }
@@ -1488,7 +1488,19 @@ nav a[aria-current="page"]{color:#4f7f22}
   .pp-form-intro{position:static}
 }
 @media(max-width:650px){
-  .pp-hero{min-height:720px;background-position:58% center}
+  .pp-hero{
+    min-height:760px;
+    background-size:auto 100%;
+    background-position:center center;
+  }
+  .pp-hero-shade{
+    background:linear-gradient(
+      90deg,
+      rgba(3,12,6,.96) 0%,
+      rgba(3,12,6,.90) 62%,
+      rgba(3,12,6,.50) 100%
+    );
+  }
   .pp-benefit-grid,.pp-process-grid,.pp-audience-grid,.pp-form-grid{grid-template-columns:1fr}
   .pp-intro,.pp-benefits,.pp-process,.pp-audience,.pp-form-section{padding:72px 22px}
   .pp-form{padding:22px}
