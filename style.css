@@ -1285,13 +1285,15 @@ nav a[aria-current="page"]{color:#4f7f22}
   inset:0;
   background:linear-gradient(90deg,rgba(5,15,8,.94) 0%,rgba(5,15,8,.80) 42%,rgba(5,15,8,.22) 74%,rgba(5,15,8,.04) 100%);
 }
+
 .pp-hero-content{
   position:relative;
   z-index:2;
-  width:min(760px,92vw);
-  padding:80px max(24px,6vw);
+  width:min(700px,92vw);
+  padding:80px 7%;
   color:#fff;
 }
+
 .pp-kicker,.pp-eyebrow{
   margin:0 0 12px;
   color:#679638;
