@@ -1,0 +1,14 @@
+ZifaFit — correction du Hero premium
+Date : 20 juillet 2026
+
+Correction effectuée :
+- retrait des anciennes classes du Hero qui entraient en conflit avec style.css;
+- conservation d'une seule bannière Hero premium;
+- conservation du logo, des feuilles, des quatre boutons et de leurs liens;
+- conservation du bouton « Me suivre » vers la section d'intérêt;
+- aucune autre section de la page d'accueil n'a été retirée;
+- texte « Carte officielle » confirmé sur la collection Foundation.
+
+Fichiers principalement modifiés :
+- index.html
+- collection-fondation.html
