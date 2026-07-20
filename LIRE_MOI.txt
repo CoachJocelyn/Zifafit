@@ -1,3 +1,33 @@
-Cette mise à jour remplace uniquement le texte de la section « Why I Created ZifaFit » sur la page Zifa Gong.
+MISE À JOUR DES NOMS ET DU CONCEPT ZIFAFIT
 
-Dans GitHub : Add file > Upload files > téléverser les fichiers extraits > accepter le remplacement de zifa-gong.html > Commit changes.
+Changements :
+- Tout le contenu de la page Zifa Gong est maintenant en français.
+- « Collections » devient « Zifa Fit » dans les menus.
+- « Zifa Gong » apparaît immédiatement après « Zifa Fit ».
+- Une nouvelle section explique :
+    ZifaFit = la méthode complète
+    Zifa Fit = le côté entraînement et les collections
+    Zifa Gong = le côté respiration, récupération et calme
+- La Collection Foundation demeure la première collection Zifa Fit.
+- L’histoire personnelle a été raccourcie, corrigée et rendue plus touchante.
+
+Pages incluses :
+- index.html
+- collection-fondation.html
+- zifa-gong.html
+
+IMPORTANT :
+La page Foundation n’a pas été changée dans son contenu. Seul son menu a été renommé.
+
+Pour afficher le même menu dans methode.html et les autres pages :
+ajoutez ce bloc dans leur navigation, dans cet ordre :
+
+<a href="collection-fondation.html">Zifa Fit</a>
+<a href="zifa-gong.html">Zifa Gong</a>
+
+Installation :
+1. Décompresser ce ZIP.
+2. GitHub > Add file > Upload files.
+3. Téléverser tous les fichiers extraits.
+4. Accepter les remplacements.
+5. Commit changes.

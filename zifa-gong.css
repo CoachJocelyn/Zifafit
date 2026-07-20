@@ -61,3 +61,21 @@
 .site-header nav a[aria-current="page"]{color:#4f7f1c;font-weight:900}
 @media(max-width:1050px){.zg-story{grid-template-columns:1fr}.zg-work-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:800px){.zg-card-grid,.zg-notify{grid-template-columns:1fr}.zg-work-grid{grid-template-columns:1fr}.zg-hero{min-height:560px}}
+
+
+.zg-identity{padding:76px 24px;background:#e8e3d5}
+.zg-identity-grid{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:24px;align-items:center;width:min(1100px,100%);margin:0 auto}
+.zg-identity-card{display:flex;flex-direction:column;min-height:310px;padding:32px;border:1px solid #d4dccf;border-radius:24px;background:#fff;box-shadow:0 14px 34px rgba(22,38,19,.08)}
+.zg-identity-label{color:#4f7f1c;font-size:.78rem;font-weight:900;letter-spacing:.15em}
+.zg-identity-card h3{margin:10px 0;color:#173d1c;font-size:2.2rem}
+.zg-identity-card p{color:#4b564b;line-height:1.65}
+.zg-identity-card strong{margin-top:auto;color:#173d1c}
+.zg-identity-card a{display:inline-flex;width:max-content;margin:8px 0;color:#4f7f1c;font-size:1.35rem;font-weight:900;text-decoration:none}
+.zg-identity-card small{margin-top:10px;color:#667066;line-height:1.45}
+.zg-identity-gong{border:2px solid #4f7f1c}
+.zg-identity-plus{color:#4f7f1c;font-size:3rem;font-weight:900}
+.zg-identity-summary{max-width:850px;margin:30px auto 0;color:#314031;font-size:1.08rem;line-height:1.6;text-align:center}
+@media(max-width:820px){
+  .zg-identity-grid{grid-template-columns:1fr}
+  .zg-identity-plus{text-align:center}
+}
