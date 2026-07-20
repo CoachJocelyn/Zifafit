@@ -1,33 +1,17 @@
-MISE À JOUR DES NOMS ET DU CONCEPT ZIFAFIT
+MISE À JOUR DE LA PAGE D’ACCUEIL
 
-Changements :
-- Tout le contenu de la page Zifa Gong est maintenant en français.
-- « Collections » devient « Zifa Fit » dans les menus.
-- « Zifa Gong » apparaît immédiatement après « Zifa Fit ».
-- Une nouvelle section explique :
-    ZifaFit = la méthode complète
-    Zifa Fit = le côté entraînement et les collections
-    Zifa Gong = le côté respiration, récupération et calme
-- La Collection Foundation demeure la première collection Zifa Fit.
-- L’histoire personnelle a été raccourcie, corrigée et rendue plus touchante.
-
-Pages incluses :
-- index.html
-- collection-fondation.html
-- zifa-gong.html
-
-IMPORTANT :
-La page Foundation n’a pas été changée dans son contenu. Seul son menu a été renommé.
-
-Pour afficher le même menu dans methode.html et les autres pages :
-ajoutez ce bloc dans leur navigation, dans cet ordre :
-
-<a href="collection-fondation.html">Zifa Fit</a>
-<a href="zifa-gong.html">Zifa Gong</a>
+Changements réalisés :
+- Le bouton « Programme personnalisé » est conservé.
+- Le bouton « Me suivre » est ajouté sur la bannière d’accueil.
+- Le bouton « Découvrir le Zifa Gong » est aussi présent.
+- Les petites icônes cloche et joker sont retirées.
+- La carte couverture Foundation apparaît derrière « Première édition ».
+- Le bloc « Me tenir informé » possède maintenant un arrière-plan nature inspirant.
+- Les formulaires et leurs destinations restent inchangés.
 
 Installation :
-1. Décompresser ce ZIP.
+1. Décompresser le ZIP.
 2. GitHub > Add file > Upload files.
-3. Téléverser tous les fichiers extraits.
+3. Téléverser index.html, zifafit-interest.css et foundation-cover.png.
 4. Accepter les remplacements.
 5. Commit changes.
