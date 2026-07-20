@@ -1,5 +1,9 @@
-Cette mise à jour change UNIQUEMENT le temps affiché sur les 10 blocs de la page Fondation.
-Tous les entraînements affichent maintenant : 20–30 min.
-Aucune image, aucun bouton, aucun aperçu de carte et aucune autre partie de la page n'a été modifié.
+Le nouvel onglet Zifa Gong n'apparaissait pas parce que les pages déjà existantes n'avaient pas été modifiées.
 
-Dans GitHub : Add file > Upload files > téléverser collection-fondation.html > remplacer le fichier existant > Commit changes.
+Ce ZIP contient :
+- la nouvelle page zifa-gong.html avec sa bannière;
+- zifa-gong.css et zifa-gong.js;
+- les deux images de cartes;
+- collection-fondation.html avec seulement l'ajout de l'onglet Zifa Gong dans le menu.
+
+Téléversez tous les fichiers extraits dans GitHub avec Add file > Upload files, puis acceptez le remplacement de collection-fondation.html.
