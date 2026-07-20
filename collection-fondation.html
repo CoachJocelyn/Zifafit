@@ -39,6 +39,29 @@
 @media(max-width:1350px){.v18-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1100px}}
 @media(max-width:850px){.v18-hero{min-height:610px}.v18-stats{grid-template-columns:1fr}.v18-heading{grid-template-columns:1fr}.v18-heading>span{display:none}.v18-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:580px){.v18-grid{grid-template-columns:1fr;max-width:390px}}
+
+/* Ajout ciblé : aperçu des cartes officielles. La page Fondation reste inchangée. */
+.v18-card-button{font:inherit;cursor:pointer;width:100%;margin:0;text-align:center}
+.card-preview-modal[hidden]{display:none}
+.card-preview-modal{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:18px;background:rgba(0,0,0,.78)}
+.card-preview-box{position:relative;width:min(980px,96vw);max-height:94vh;overflow:auto;border-radius:18px;background:#f8f4eb;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+.card-preview-close{position:absolute;top:12px;right:14px;z-index:2;width:42px;height:42px;border:0;border-radius:50%;background:#fff;color:#153f21;font-size:1.6rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.card-preview-content{display:grid;grid-template-columns:minmax(280px,1.1fr) minmax(260px,.9fr);gap:24px;padding:28px}
+.card-preview-image-wrap{display:flex;align-items:center;justify-content:center;min-height:540px;border-radius:14px;background:#e9e1d3;overflow:hidden}
+.card-preview-image{display:block;width:100%;max-height:78vh;object-fit:contain}
+.card-preview-info{display:flex;flex-direction:column;justify-content:center}
+.card-preview-info h2{margin:0 0 10px;color:#174b25;font-size:2rem}
+.card-preview-info p{color:#3d493f;line-height:1.55}
+.card-side-toggle{display:flex;gap:10px;margin:12px 0 22px}
+.card-side-toggle button{padding:10px 16px;border:1px solid #285f32;border-radius:999px;background:#fff;color:#174b25;font-weight:800;cursor:pointer}
+.card-side-toggle button.active{background:#215d2d;color:#fff}
+.deck-reserve-form{display:grid;gap:11px;margin-top:12px}
+.deck-reserve-form label{display:grid;gap:5px;color:#25352a;font-size:.9rem;font-weight:750}
+.deck-reserve-form input{box-sizing:border-box;width:100%;min-height:44px;padding:9px 11px;border:1px solid #b8c3b4;border-radius:8px;font:inherit}
+.deck-reserve-submit{min-height:48px;margin-top:4px;border:0;border-radius:999px;background:#1c5a2a;color:#fff;font:inherit;font-weight:850;cursor:pointer}
+.deck-reserve-note{font-size:.78rem;color:#687269}
+@media(max-width:760px){.card-preview-content{grid-template-columns:1fr;padding:18px}.card-preview-image-wrap{min-height:auto}.card-preview-info h2{font-size:1.55rem}}
+
 </style>
 </head>
 <body>
@@ -80,7 +103,7 @@
 <div class="v18-meta"><span>◷ 30 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="1" data-title="Carte 1 – Starter"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -91,7 +114,7 @@
 <div class="v18-meta"><span>◷ 40 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="2" data-title="Carte 2 – Force haut du corps"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -102,7 +125,7 @@
 <div class="v18-meta"><span>◷ 40 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="3" data-title="Carte 3 – Force bas du corps"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -113,7 +136,7 @@
 <div class="v18-meta"><span>◷ 45 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="4" data-title="Carte 4 – Corps complet"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -124,7 +147,7 @@
 <div class="v18-meta"><span>◷ 30 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="5" data-title="Carte 5 – HIIT"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -135,7 +158,7 @@
 <div class="v18-meta"><span>◷ 30 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="6" data-title="Carte 6 – Centre"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -146,7 +169,7 @@
 <div class="v18-meta"><span>◷ 20–30 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="7" data-title="Carte 7 – EMOM"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -157,7 +180,7 @@
 <div class="v18-meta"><span>◷ 20 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="8" data-title="Carte 8 – Tabata"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -168,7 +191,7 @@
 <div class="v18-meta"><span>◷ 30 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="9" data-title="Carte 9 – Sans impact"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 
@@ -179,13 +202,95 @@
 <div class="v18-meta"><span>◷ 45–60 min</span><span>▥ Débutant à avancé</span></div>
 <div class="v18-actions">
 <span class="v18-btn v18-light"><strong>▶ Voir la séance</strong><small>vidéo bientôt</small></span>
-<span class="v18-btn v18-dark"><strong>▣ Carte officielle</strong><small>bientôt</small></span>
+<button type="button" class="v18-btn v18-dark v18-card-button" data-card="10" data-title="Carte 10 – Défi"><strong>▣ Carte officielle</strong></button>
 </div>
 </article>
 </div>
 </section>
 </main>
 
+<div class="card-preview-modal" id="cardPreviewModal" hidden aria-hidden="true">
+  <div class="card-preview-box" role="dialog" aria-modal="true" aria-labelledby="cardPreviewTitle">
+    <button type="button" class="card-preview-close" id="cardPreviewClose" aria-label="Fermer">×</button>
+    <div class="card-preview-content">
+      <div class="card-preview-image-wrap">
+        <img id="cardPreviewImage" class="card-preview-image" src="" alt="">
+      </div>
+      <div class="card-preview-info">
+        <h2 id="cardPreviewTitle">Carte officielle ZifaFit</h2>
+        <p>Consultez le recto ou le verso de cette carte. Le deck imprimé complet sera offert prochainement.</p>
+        <div class="card-side-toggle" aria-label="Choisir le côté de la carte">
+          <button type="button" id="showRecto" class="active">Recto</button>
+          <button type="button" id="showVerso">Verso</button>
+        </div>
+        <h3>Réserver un deck Foundation</h3>
+        <form action="https://formsubmit.co/zifafit@outlook.com" method="POST" class="deck-reserve-form">
+          <input type="hidden" name="_subject" value="Nouvelle réservation d’intérêt — Deck ZifaFit Foundation">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Carte consultée" id="reservedCard" value="">
+          <label>Prénom et nom<input type="text" name="Nom" required autocomplete="name"></label>
+          <label>Courriel<input type="email" name="Courriel" required autocomplete="email"></label>
+          <label>Ville<input type="text" name="Ville" autocomplete="address-level2"></label>
+          <label>Nombre de decks souhaités<input type="number" name="Quantité souhaitée" min="1" max="20" value="1" required></label>
+          <button type="submit" class="deck-reserve-submit">Je veux réserver mon deck</button>
+        </form>
+        <p class="deck-reserve-note">Liste d’intérêt seulement. Aucun paiement maintenant.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <footer><img src="logo.png" alt="" class="footer-logo"><p>© 2026 ZifaFit — Tous droits réservés.</p></footer>
+
+<script>
+(() => {
+  const modal = document.getElementById('cardPreviewModal');
+  const image = document.getElementById('cardPreviewImage');
+  const title = document.getElementById('cardPreviewTitle');
+  const closeBtn = document.getElementById('cardPreviewClose');
+  const rectoBtn = document.getElementById('showRecto');
+  const versoBtn = document.getElementById('showVerso');
+  const reservedCard = document.getElementById('reservedCard');
+  let currentCard = 1;
+  let currentTitle = '';
+
+  function setSide(side) {
+    const base = currentCard === 1 ? 'carte1_starter' : `carte${currentCard}`;
+    image.src = `${base}_${side}.png`;
+    image.alt = `${currentTitle} — ${side}`;
+    rectoBtn.classList.toggle('active', side === 'recto');
+    versoBtn.classList.toggle('active', side === 'verso');
+  }
+
+  document.querySelectorAll('.v18-card-button').forEach(button => {
+    button.addEventListener('click', () => {
+      currentCard = Number(button.dataset.card);
+      currentTitle = button.dataset.title;
+      title.textContent = currentTitle;
+      reservedCard.value = currentTitle;
+      setSide('recto');
+      modal.hidden = false;
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    });
+  });
+
+  rectoBtn.addEventListener('click', () => setSide('recto'));
+  versoBtn.addEventListener('click', () => setSide('verso'));
+
+  function closeModal() {
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
+})();
+</script>
+
 </body>
 </html>

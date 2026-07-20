@@ -1,4 +1,6 @@
-Ce ZIP restaure la page Fondation à la version du commit 0bbae6f, juste avant le dernier upload.
+MODIFICATION CIBLÉE UNIQUEMENT :
+- La mise en page Fondation est conservée.
+- Seul le bouton 'Carte officielle bientôt' devient 'Carte officielle'.
+- Un clic ouvre un aperçu recto/verso et un formulaire de réservation.
 
-Dans GitHub : Add file > Upload files > téléverser collection-fondation.html > remplacer le fichier existant > Commit changes.
-Les fichiers foundation-cards.css, foundation-cards.js et le dossier cartes peuvent rester : cette ancienne page ne les utilise pas.
+GitHub : Add file > Upload files > téléverser collection-fondation.html et les 20 PNG > accepter le remplacement du HTML > Commit changes.
