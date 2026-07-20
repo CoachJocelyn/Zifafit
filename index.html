@@ -7,6 +7,7 @@
   <title>ZifaFit</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="zifafit-interest.css">
+  <link rel="stylesheet" href="premium-home.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ENFRR55ED"></script>
@@ -33,25 +34,59 @@
   </header>
 
   <main>
-    <section class="hero" id="accueil">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <section class="hero premium-hero" id="accueil">
+      <div class="premium-hero-bg" aria-hidden="true"></div>
+      <div class="premium-hero-vignette" aria-hidden="true"></div>
 
-      <div class="hero-content">
-        <img class="hero-logo" src="logo.png" alt="Logo ZifaFit">
-        <p class="hero-kicker">Force • Équilibre • Nature</p>
+      <div class="premium-leaves" aria-hidden="true">
+        <span class="leaf leaf-1"></span>
+        <span class="leaf leaf-2"></span>
+        <span class="leaf leaf-3"></span>
+        <span class="leaf leaf-4"></span>
+        <span class="leaf leaf-5"></span>
+      </div>
 
-        <h1>Le CrossFit pour le corps.<br><span>Le Zifa Gong pour l’esprit.</span></h1>
-
-        <p class="hero-intro">Des entraînements gratuits, accessibles et inspirés par la nature.</p>
-
-        <div class="actions premium-home-actions">
-          <a class="button primary" href="https://www.youtube.com/@Zifafit" target="_blank" rel="noopener">▶ Voir les vidéos gratuites</a>
-          <a class="button secondary" href="programme-personnalise.html">Programme personnalisé</a>
-          <a class="button secondary" href="zifa-gong.html">Découvrir le Zifa Gong</a>
-          <a class="button follow-cta" href="#interet">Me suivre</a>
+      <div class="hero-content premium-hero-content">
+        <div class="premium-logo-wrap">
+          <img class="hero-logo premium-logo" src="logo.png" alt="Logo ZifaFit">
         </div>
 
-        <a class="scroll-cue" href="#decouvrir" aria-label="Découvrir la méthode">⌄</a>
+        <p class="premium-kicker">ENTRAÎNEMENT • ÉQUILIBRE • NATURE</p>
+
+        <h1 class="premium-title">
+          <span>Le CrossFit pour le corps.</span>
+          <span>Le Zifa Gong pour l’esprit.</span>
+        </h1>
+
+        <p class="hero-intro premium-intro">
+          Des entraînements gratuits, accessibles et inspirés par la nature.
+        </p>
+
+        <div class="actions premium-home-actions">
+          <a class="button primary premium-button premium-button-main"
+             href="https://www.youtube.com/@Zifafit"
+             target="_blank"
+             rel="noopener">
+            ▶ Voir les vidéos gratuites
+          </a>
+
+          <a class="button secondary premium-button"
+             href="programme-personnalise.html">
+            Programme personnalisé
+          </a>
+
+          <a class="button secondary premium-button"
+             href="zifa-gong.html">
+            Découvrir le Zifa Gong
+          </a>
+
+          <a class="button premium-button premium-button-follow"
+             href="#interet">
+            Me suivre
+          </a>
+        </div>
+
+        <a class="scroll-cue premium-scroll" href="#interet" aria-label="Descendre vers la section suivante">⌄</a>
       </div>
     </section>
 
@@ -351,5 +386,6 @@
     <img src="logo.png" alt="" class="footer-logo">
     <p>© 2026 ZifaFit — Tous droits réservés.</p>
   </footer>
+  <script src="premium-home.js"></script>
 </body>
 </html>
