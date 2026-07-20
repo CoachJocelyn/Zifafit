@@ -1,6 +1,5 @@
-MODIFICATION CIBLÉE UNIQUEMENT :
-- La mise en page Fondation est conservée.
-- Seul le bouton 'Carte officielle bientôt' devient 'Carte officielle'.
-- Un clic ouvre un aperçu recto/verso et un formulaire de réservation.
+Cette mise à jour change UNIQUEMENT le temps affiché sur les 10 blocs de la page Fondation.
+Tous les entraînements affichent maintenant : 20–30 min.
+Aucune image, aucun bouton, aucun aperçu de carte et aucune autre partie de la page n'a été modifié.
 
-GitHub : Add file > Upload files > téléverser collection-fondation.html et les 20 PNG > accepter le remplacement du HTML > Commit changes.
+Dans GitHub : Add file > Upload files > téléverser collection-fondation.html > remplacer le fichier existant > Commit changes.
