@@ -1,13 +1,6 @@
-MISE À JOUR DE LA PAGE D’ACCUEIL
+Cette mise à jour conserve les boutons Vidéos, Programme personnalisé, Découvrir le Zifa Gong et Me suivre.
 
-Changements réalisés :
-- Le bouton « Programme personnalisé » est conservé.
-- Le bouton « Me suivre » est ajouté sur la bannière d’accueil.
-- Le bouton « Découvrir le Zifa Gong » est aussi présent.
-- Les petites icônes cloche et joker sont retirées.
-- La carte couverture Foundation apparaît derrière « Première édition ».
-- Le bloc « Me tenir informé » possède maintenant un arrière-plan nature inspirant.
-- Les formulaires et leurs destinations restent inchangés.
+Elle remplace uniquement la section Restez connecté par une présentation de lancement plus haut de gamme.
 
 Installation :
 1. Décompresser le ZIP.
