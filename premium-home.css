@@ -24,7 +24,7 @@
   inset:-4%;
   z-index:-4;
   background:
-    url("zifafit-hero-premium.jpg") center/cover no-repeat;
+    url("forest-bg.jpg") center 42%/cover no-repeat;
   transform:scale(1.04);
   filter:saturate(1.05) contrast(1.06);
   animation:premiumZoom 18s ease-in-out infinite alternate;
