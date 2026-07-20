@@ -1,0 +1,4 @@
+Ce ZIP restaure la page Fondation à la version du commit 0bbae6f, juste avant le dernier upload.
+
+Dans GitHub : Add file > Upload files > téléverser collection-fondation.html > remplacer le fichier existant > Commit changes.
+Les fichiers foundation-cards.css, foundation-cards.js et le dossier cartes peuvent rester : cette ancienne page ne les utilise pas.
