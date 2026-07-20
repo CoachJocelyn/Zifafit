@@ -1,28 +1,3 @@
-MISE À JOUR ZIFAFIT
+Cette mise à jour remplace uniquement le texte de la section « Why I Created ZifaFit » sur la page Zifa Gong.
 
-Changements effectués :
-1. L’histoire de la page Zifa Gong a été réécrite à partir de la vraie raison
-   qui a mené à la création de ZifaFit.
-2. L’onglet « Zifa Gong » a été ajouté immédiatement après « Collections »
-   dans les pages disponibles :
-   - index.html
-   - collection-fondation.html
-   - zifa-gong.html
-
-La page Fondation n’a pas été modifiée autrement : seulement son menu.
-
-IMPORTANT :
-Les fichiers methode.html et programme-personnalise.html n’étaient pas disponibles
-dans les fichiers fournis. Pour afficher aussi l’onglet Zifa Gong sur ces pages,
-il faudra me les envoyer ou les ajouter plus tard avec cette ligne :
-
-<a href="zifa-gong.html">Zifa Gong</a>
-
-Elle doit être placée juste après le lien Collections.
-
-Installation :
-1. Décompresser le ZIP.
-2. GitHub > Add file > Upload files.
-3. Téléverser tous les fichiers extraits.
-4. Accepter le remplacement des fichiers existants.
-5. Commit changes.
+Dans GitHub : Add file > Upload files > téléverser les fichiers extraits > accepter le remplacement de zifa-gong.html > Commit changes.
