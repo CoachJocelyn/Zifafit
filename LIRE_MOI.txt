@@ -1,9 +1,28 @@
-Le nouvel onglet Zifa Gong n'apparaissait pas parce que les pages déjà existantes n'avaient pas été modifiées.
+MISE À JOUR ZIFAFIT
 
-Ce ZIP contient :
-- la nouvelle page zifa-gong.html avec sa bannière;
-- zifa-gong.css et zifa-gong.js;
-- les deux images de cartes;
-- collection-fondation.html avec seulement l'ajout de l'onglet Zifa Gong dans le menu.
+Changements effectués :
+1. L’histoire de la page Zifa Gong a été réécrite à partir de la vraie raison
+   qui a mené à la création de ZifaFit.
+2. L’onglet « Zifa Gong » a été ajouté immédiatement après « Collections »
+   dans les pages disponibles :
+   - index.html
+   - collection-fondation.html
+   - zifa-gong.html
 
-Téléversez tous les fichiers extraits dans GitHub avec Add file > Upload files, puis acceptez le remplacement de collection-fondation.html.
+La page Fondation n’a pas été modifiée autrement : seulement son menu.
+
+IMPORTANT :
+Les fichiers methode.html et programme-personnalise.html n’étaient pas disponibles
+dans les fichiers fournis. Pour afficher aussi l’onglet Zifa Gong sur ces pages,
+il faudra me les envoyer ou les ajouter plus tard avec cette ligne :
+
+<a href="zifa-gong.html">Zifa Gong</a>
+
+Elle doit être placée juste après le lien Collections.
+
+Installation :
+1. Décompresser le ZIP.
+2. GitHub > Add file > Upload files.
+3. Téléverser tous les fichiers extraits.
+4. Accepter le remplacement des fichiers existants.
+5. Commit changes.
