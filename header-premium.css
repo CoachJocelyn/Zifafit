@@ -1,0 +1,60 @@
+/* Barre supérieure ZifaFit — sombre, sobre et cohérente avec l'accueil */
+.site-header{
+  position:sticky;
+  top:12px;
+  z-index:1000;
+  width:min(1580px,calc(100% - 28px));
+  margin:12px auto 14px;
+  padding:10px 18px;
+  border:1px solid rgba(180,224,128,.22);
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(15,22,16,.92),rgba(5,10,7,.94));
+  box-shadow:0 16px 38px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.site-header .brand{
+  color:#f5f8f1;
+  font-size:1.2rem;
+  font-weight:900;
+  letter-spacing:-.02em;
+  text-shadow:0 1px 8px rgba(0,0,0,.35);
+}
+.site-header nav{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+.site-header nav a{
+  padding:9px 13px;
+  border:1px solid transparent;
+  border-radius:999px;
+  color:#f3f6ef;
+  font-size:.88rem;
+  font-weight:800;
+  line-height:1;
+  transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease;
+}
+.site-header nav a:hover{
+  transform:translateY(-1px);
+  border-color:rgba(164,216,99,.35);
+  background:rgba(103,156,47,.16);
+  color:#c9ef9b;
+}
+.site-header nav a[aria-current="page"]{
+  border-color:rgba(151,211,78,.72);
+  background:linear-gradient(180deg,rgba(85,139,35,.92),rgba(53,99,23,.95));
+  color:#fff;
+  box-shadow:0 7px 17px rgba(44,91,20,.3),inset 0 1px 0 rgba(255,255,255,.18);
+}
+@media(max-width:800px){
+  .site-header{
+    top:7px;
+    width:calc(100% - 14px);
+    margin:7px auto 10px;
+    padding:10px 14px;
+    border-radius:20px;
+  }
+  .site-header nav{display:none}
+  .site-header .brand{font-size:1.15rem}
+}
