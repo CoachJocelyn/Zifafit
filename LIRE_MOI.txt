@@ -1,11 +1,15 @@
-REMPLACER UNIQUEMENT CES DEUX FICHIERS À LA RACINE DU SITE :
+REMPLACE SEULEMENT CES 3 FICHIERS À LA RACINE DU SITE :
 
 1. methode.html
-2. methode-hero-cinematic.png
+2. methode-v2.css
+3. methode-hero-parcours.png
 
-IMPORTANT :
-- Le titre de la bannière est déjà intégré à l’image.
-- Le code n’ajoute donc aucun deuxième titre par-dessus.
-- Le CSS est directement intégré à methode.html pour éviter les pages sans style.
-- L’ordre du menu est : Accueil, La méthode, Zifa Fit, Zifa Gong, Vidéos, À propos.
-- Après le téléversement, faire Ctrl + F5.
+Ce qui a été corrigé :
+- Un seul menu en haut.
+- Le menu qui était imprimé dans l’image a été retiré par recadrage.
+- Aucun texte de bannière ajouté par-dessus l’image.
+- Le texte de la page ne répète plus le contenu détaillé de la page Zifa Gong.
+- Retour du graphique ascendant du parcours ZifaFit.
+- Ordre du menu : Accueil, La méthode, Zifa Fit, Zifa Gong, Vidéos, À propos.
+
+Après le téléversement, fais Ctrl + F5.

@@ -1,0 +1,550 @@
+/* PAGE LA MÉTHODE V2 — styles isolés pour ne pas briser les autres pages */
+
+.methode-v2-page {
+  margin: 0;
+  color: #142019;
+  background: #f8f6ef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.methode-v2-page * {
+  box-sizing: border-box;
+}
+
+.methode-main-header {
+  position: absolute !important;
+  z-index: 50;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 34px), 1980px);
+}
+
+.methode-main-header .brand {
+  color: #fff;
+}
+
+.methode-main-header nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.methode-main-header nav a {
+  white-space: nowrap;
+}
+
+.methode-menu-toggle {
+  display: none;
+  width: 46px;
+  height: 43px;
+  padding: 8px;
+  border: 1px solid rgba(122, 181, 54, .55);
+  border-radius: 13px;
+  background: rgba(255,255,255,.05);
+}
+
+.methode-menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 4px auto;
+  border-radius: 3px;
+  background: white;
+}
+
+.methode-v2-hero {
+  min-height: clamp(560px, 54vw, 860px);
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.08)),
+    url("methode-hero-parcours.png") center center / cover no-repeat;
+}
+
+.methode-v2-page main section:not(.methode-v2-hero) {
+  padding: clamp(72px, 8vw, 125px) max(26px, calc((100vw - 1540px) / 2));
+}
+
+.methode-v2-eyebrow,
+.methode-v2-small-label {
+  margin: 0 0 14px;
+  color: #5b931f;
+  font-weight: 900;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.methode-v2-eyebrow {
+  font-size: 15px;
+}
+
+.methode-v2-small-label {
+  font-size: 13px;
+}
+
+.methode-v2-page h1,
+.methode-v2-page h2,
+.methode-v2-page h3 {
+  margin-top: 0;
+  color: #102118;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.methode-v2-page h1 {
+  margin-bottom: 28px;
+  font-size: clamp(43px, 4.4vw, 79px);
+}
+
+.methode-v2-page h2 {
+  margin-bottom: 24px;
+  font-size: clamp(40px, 4vw, 70px);
+}
+
+.methode-v2-page h3 {
+  margin-bottom: 14px;
+  font-size: clamp(25px, 2vw, 36px);
+}
+
+.methode-v2-page p,
+.methode-v2-page li {
+  font-size: clamp(18px, 1.3vw, 22px);
+  line-height: 1.7;
+}
+
+.methode-v2-origin {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(48px, 7vw, 110px);
+  align-items: center;
+  background: #fff;
+}
+
+.methode-v2-photo {
+  position: relative;
+}
+
+.methode-v2-photo::after {
+  content: "";
+  position: absolute;
+  inset: 28px -25px -25px 28px;
+  z-index: 0;
+  border-radius: 38px;
+  background: linear-gradient(145deg, #dce9d5, #f1ead8);
+}
+
+.methode-v2-photo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  border-radius: 38px;
+  box-shadow: 0 24px 60px rgba(27, 65, 36, .16);
+}
+
+.methode-v2-origin-copy p {
+  color: #506058;
+}
+
+.methode-v2-origin-copy blockquote {
+  margin: 34px 0 0;
+  padding: 25px 28px;
+  border-left: 7px solid #5b931f;
+  border-radius: 0 20px 20px 0;
+  color: #1f3922;
+  background: #eef5e9;
+  font-size: clamp(20px, 1.55vw, 27px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.methode-v2-difference {
+  background: #f7f4ea;
+}
+
+.methode-v2-heading {
+  max-width: 990px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.methode-v2-heading > p:last-child {
+  color: #58665d;
+}
+
+.methode-v2-difference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.methode-v2-difference-grid article {
+  min-height: 365px;
+  padding: 38px;
+  border: 1px solid rgba(61, 102, 43, .16);
+  border-radius: 28px;
+  background: linear-gradient(145deg, #fff, #fbfcf8);
+  box-shadow: 0 17px 42px rgba(24, 59, 31, .08);
+}
+
+.methode-v2-difference-grid article > span {
+  display: block;
+  margin-bottom: 70px;
+  color: #8aaa6b;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.methode-v2-difference-grid p {
+  color: #58665d;
+}
+
+.methode-v2-components {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(122, 175, 66, .14), transparent 34rem),
+    #edf4e9;
+}
+
+.methode-v2-components-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.methode-v2-component {
+  min-height: 580px;
+  padding: clamp(37px, 4vw, 60px);
+  border-radius: 36px;
+  box-shadow: 0 24px 55px rgba(27, 61, 34, .13);
+}
+
+.methode-v2-training {
+  color: white;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(155, 214, 82, .25), transparent 35%),
+    linear-gradient(145deg, #194817, #528422);
+}
+
+.methode-v2-training h3,
+.methode-v2-training .methode-v2-small-label {
+  color: white;
+}
+
+.methode-v2-reset {
+  border: 1px solid rgba(55, 100, 40, .18);
+  background: rgba(255,255,255,.95);
+}
+
+.methode-v2-component ul {
+  margin: 28px 0 36px;
+  padding-left: 24px;
+}
+
+.methode-v2-component li {
+  margin-bottom: 9px;
+}
+
+.methode-v2-component a,
+.methode-v2-cta a {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  border-radius: 999px;
+  color: #153319;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.methode-v2-reset a {
+  color: #fff;
+  background: #4d851d;
+}
+
+.methode-v2-path {
+  overflow: hidden;
+  background: #fff;
+}
+
+.methode-v2-path-graphic {
+  position: relative;
+  max-width: 1270px;
+  min-height: 920px;
+  margin: 0 auto;
+  padding: 70px 45px;
+  border-radius: 44px;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(128, 185, 62, .15), transparent 25rem),
+    linear-gradient(145deg, #f7f5eb, #edf4e9);
+  box-shadow: inset 0 0 0 1px rgba(71, 110, 50, .12);
+}
+
+.methode-v2-path-line {
+  position: absolute;
+  left: 18%;
+  bottom: 110px;
+  width: 64%;
+  height: 660px;
+  border-left: 8px solid #5c9322;
+  border-top: 8px solid #5c9322;
+  border-radius: 190px 0 0 0;
+  transform: skewY(-25deg) rotate(-1deg);
+  transform-origin: left bottom;
+  opacity: .27;
+}
+
+.methode-v2-path-step {
+  position: absolute;
+  z-index: 2;
+  width: min(500px, 45%);
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+  padding: 25px;
+  border: 1px solid rgba(63, 105, 43, .15);
+  border-radius: 26px;
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 17px 42px rgba(29, 63, 34, .11);
+}
+
+.methode-v2-path-step p {
+  margin-bottom: 0;
+  color: #59665d;
+  font-size: 17px;
+}
+
+.methode-v2-path-step h3 {
+  font-size: 28px;
+}
+
+.methode-v2-path-dot {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(145deg, #76b72f, #3d7716);
+  box-shadow: 0 9px 22px rgba(64, 121, 25, .28);
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.methode-v2-path-step.step-1 {
+  left: 6%;
+  bottom: 75px;
+}
+
+.methode-v2-path-step.step-2 {
+  left: 19%;
+  bottom: 285px;
+}
+
+.methode-v2-path-step.step-3 {
+  right: 17%;
+  top: 255px;
+}
+
+.methode-v2-path-step.step-4 {
+  right: 5%;
+  top: 45px;
+}
+
+.methode-v2-path-summit {
+  position: absolute;
+  z-index: 3;
+  top: 27px;
+  right: 31px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #315e19;
+  font-size: 18px;
+}
+
+.methode-v2-path-summit span {
+  font-size: 52px;
+  line-height: 1;
+}
+
+.methode-v2-for-who {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(50px, 7vw, 110px);
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(115deg, rgba(6, 28, 14, .98), rgba(27, 81, 31, .92)),
+    url("forest-bg.jpg") center / cover;
+}
+
+.methode-v2-for-who h2,
+.methode-v2-for-who h3 {
+  color: white;
+}
+
+.methode-v2-for-who > div > p:not(.methode-v2-eyebrow),
+.methode-v2-for-who-list p {
+  color: rgba(255,255,255,.8);
+}
+
+.methode-v2-for-who-list {
+  display: grid;
+  gap: 17px;
+}
+
+.methode-v2-for-who-list article {
+  padding: 24px 27px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 21px;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(8px);
+}
+
+.methode-v2-for-who-list h3 {
+  margin-bottom: 6px;
+  font-size: 24px;
+}
+
+.methode-v2-for-who-list p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.methode-v2-cta {
+  text-align: center;
+  color: white;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(157, 216, 83, .23), transparent 32rem),
+    linear-gradient(135deg, #102d1b, #376a1f);
+}
+
+.methode-v2-cta h2 {
+  color: white;
+}
+
+.methode-v2-cta > p:not(.methode-v2-eyebrow) {
+  color: rgba(255,255,255,.82);
+}
+
+.methode-v2-page footer {
+  padding: 32px;
+  text-align: center;
+  color: rgba(255,255,255,.7);
+  background: #07110b;
+}
+
+.methode-v2-page footer img {
+  width: 78px;
+  margin: 0 auto 10px;
+}
+
+@media (max-width: 1050px) {
+  .methode-menu-toggle {
+    display: block;
+  }
+
+  .methode-main-header nav {
+    position: absolute;
+    top: calc(100% + 9px);
+    left: 10px;
+    right: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    border-radius: 21px;
+    background: rgba(6, 16, 9, .98);
+  }
+
+  .methode-main-header nav.is-open {
+    display: flex;
+  }
+
+  .methode-main-header nav a {
+    justify-content: center;
+  }
+
+  .methode-v2-origin,
+  .methode-v2-for-who {
+    grid-template-columns: 1fr;
+  }
+
+  .methode-v2-components-grid,
+  .methode-v2-difference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .methode-v2-path-graphic {
+    min-height: auto;
+    padding: 40px 25px;
+  }
+
+  .methode-v2-path-line {
+    left: 53px;
+    top: 65px;
+    bottom: 65px;
+    width: 8px;
+    height: auto;
+    border: 0;
+    border-left: 8px solid #5c9322;
+    border-radius: 0;
+    transform: none;
+  }
+
+  .methode-v2-path-step {
+    position: relative;
+    inset: auto !important;
+    width: auto;
+    margin: 0 0 25px 35px;
+  }
+
+  .methode-v2-path-summit {
+    position: relative;
+    inset: auto;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  .methode-main-header {
+    top: 8px;
+    width: calc(100% - 16px);
+  }
+
+  .methode-v2-hero {
+    min-height: 510px;
+    background-position: center center;
+  }
+
+  .methode-v2-page main section:not(.methode-v2-hero) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .methode-v2-photo::after {
+    inset: 14px -9px -9px 14px;
+  }
+
+  .methode-v2-component,
+  .methode-v2-difference-grid article {
+    padding: 29px 24px;
+  }
+
+  .methode-v2-path-step {
+    grid-template-columns: 53px 1fr;
+    margin-left: 15px;
+    padding: 20px;
+  }
+
+  .methode-v2-path-dot {
+    width: 49px;
+    height: 49px;
+  }
+}

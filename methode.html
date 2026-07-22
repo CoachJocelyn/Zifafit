@@ -3,820 +3,230 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Découvrez la méthode ZifaFit : une approche accessible qui unit l’entraînement fonctionnel et le Zifa Gong pour bouger, respirer et progresser.">
+  <meta name="description" content="Découvrez la méthode ZifaFit, son origine, ses deux composantes et son parcours de progression.">
   <title>La méthode ZifaFit</title>
 
-  <style>
-    :root {
-      --green: #5a941f;
-      --green-dark: #244d18;
-      --green-deep: #0d2818;
-      --green-soft: #eef5e9;
-      --cream: #f7f3e8;
-      --ink: #132019;
-      --muted: #536158;
-      --white: #ffffff;
-      --line: rgba(48, 92, 38, .18);
-      --shadow: 0 22px 55px rgba(19, 45, 28, .13);
-      --radius-xl: 34px;
-      --radius-lg: 26px;
-      --max: 1540px;
-    }
-
-    * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-      background: var(--cream);
-    }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 10% 10%, rgba(109, 158, 57, .08), transparent 28rem),
-        linear-gradient(180deg, #fff 0%, #fbfaf5 42%, #f2f6ee 100%);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.65;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    a { color: inherit; }
-
-    .site-shell {
-      overflow: hidden;
-    }
-
-    /* HERO — l’image contient déjà le titre et le sous-titre.
-       Aucun texte HTML n’est superposé, donc aucun doublon. */
-    .method-hero {
-      position: relative;
-      min-height: clamp(500px, 54vw, 910px);
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.12)),
-        url("methode-hero-cinematic.png") center center / cover no-repeat;
-      isolation: isolate;
-    }
-
-    .method-hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 120px;
-      background: linear-gradient(transparent, rgba(0,0,0,.2));
-      pointer-events: none;
-    }
-
-    .site-header {
-      position: absolute;
-      z-index: 10;
-      top: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: min(calc(100% - 36px), 1920px);
-      min-height: 70px;
-      padding: 10px 18px 10px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 22px;
-      border: 1px solid rgba(117, 169, 72, .4);
-      border-radius: 999px;
-      background: linear-gradient(90deg, rgba(6, 14, 9, .98), rgba(8, 19, 12, .96));
-      box-shadow: 0 14px 38px rgba(0,0,0,.35);
-    }
-
-    .brand {
-      flex: 0 0 auto;
-      color: #fff;
-      text-decoration: none;
-      font-size: clamp(22px, 1.8vw, 30px);
-      font-weight: 900;
-      letter-spacing: -.04em;
-    }
-
-    .brand span { color: #72b52c; }
-
-    .site-nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 7px;
-    }
-
-    .site-nav a {
-      display: inline-flex;
-      min-height: 44px;
-      align-items: center;
-      padding: 0 17px;
-      border-radius: 999px;
-      color: #fff;
-      text-decoration: none;
-      white-space: nowrap;
-      font-size: 16px;
-      font-weight: 800;
-      transition: transform .2s ease, background-color .2s ease;
-    }
-
-    .site-nav a:hover,
-    .site-nav a:focus-visible {
-      background: rgba(102, 162, 39, .2);
-      transform: translateY(-1px);
-      outline: none;
-    }
-
-    .site-nav a[aria-current="page"] {
-      background: linear-gradient(180deg, #6aa927, #3c7412);
-      border: 1px solid #87c63d;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.22);
-    }
-
-    .menu-toggle {
-      display: none;
-      width: 46px;
-      height: 44px;
-      border: 1px solid rgba(132, 196, 46, .55);
-      border-radius: 14px;
-      background: rgba(255,255,255,.04);
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      display: block;
-      width: 23px;
-      height: 3px;
-      margin: 4px auto;
-      border-radius: 3px;
-      background: #fff;
-    }
-
-    main section:not(.method-hero) {
-      padding: clamp(70px, 8vw, 125px) max(24px, calc((100vw - var(--max)) / 2));
-    }
-
-    .eyebrow {
-      margin: 0 0 14px;
-      color: var(--green);
-      font-size: 15px;
-      font-weight: 900;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-    }
-
-    h2, h3, p { margin-top: 0; }
-
-    h2 {
-      margin-bottom: 24px;
-      font-size: clamp(40px, 4.3vw, 76px);
-      line-height: 1.03;
-      letter-spacing: -.045em;
-    }
-
-    h3 {
-      margin-bottom: 14px;
-      font-size: clamp(25px, 2vw, 38px);
-      line-height: 1.13;
-      letter-spacing: -.025em;
-    }
-
-    .lead {
-      font-size: clamp(20px, 1.65vw, 28px);
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    /* ORIGINE */
-    .origin {
-      display: grid;
-      grid-template-columns: minmax(330px, .88fr) minmax(460px, 1.12fr);
-      gap: clamp(45px, 6vw, 100px);
-      align-items: center;
-      background: #fff;
-    }
-
-    .origin-photo {
-      position: relative;
-    }
-
-    .origin-photo::before {
-      content: "";
-      position: absolute;
-      inset: 28px -24px -24px 28px;
-      z-index: 0;
-      border-radius: var(--radius-xl);
-      background: linear-gradient(145deg, #dfead7, #f5f1df);
-    }
-
-    .origin-photo img {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      aspect-ratio: 1 / 1.08;
-      object-fit: cover;
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-    }
-
-    .origin-copy p:not(.eyebrow) {
-      color: var(--muted);
-      font-size: clamp(18px, 1.35vw, 23px);
-    }
-
-    .quote {
-      margin-top: 34px;
-      padding: 26px 30px;
-      border-left: 7px solid var(--green);
-      border-radius: 0 22px 22px 0;
-      background: var(--green-soft);
-      color: #1a321e;
-      font-size: clamp(20px, 1.45vw, 25px);
-      font-weight: 800;
-      line-height: 1.48;
-    }
-
-    /* HISTOIRE */
-    .story {
-      background: var(--cream);
-    }
-
-    .story-grid {
-      display: grid;
-      grid-template-columns: .75fr 1.25fr;
-      gap: clamp(45px, 7vw, 115px);
-      align-items: start;
-    }
-
-    .story-title {
-      position: sticky;
-      top: 35px;
-    }
-
-    .story-title h2 {
-      color: var(--green-deep);
-    }
-
-    .story-copy {
-      font-size: clamp(19px, 1.35vw, 24px);
-      color: #455449;
-    }
-
-    .story-copy p {
-      margin-bottom: 27px;
-    }
-
-    .story-copy strong {
-      color: var(--green-dark);
-    }
-
-    .signature {
-      display: inline-block;
-      margin-top: 15px;
-      color: var(--green);
-      font-size: clamp(22px, 1.6vw, 29px);
-      font-weight: 900;
-    }
-
-    /* 2 PILIERS */
-    .pillars {
-      background:
-        radial-gradient(circle at 50% 0%, rgba(124, 180, 67, .17), transparent 35rem),
-        #edf4e9;
-    }
-
-    .section-heading {
-      max-width: 920px;
-      margin: 0 auto 52px;
-      text-align: center;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(38px, 3.8vw, 66px);
-    }
-
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      max-width: 1260px;
-      margin: 0 auto;
-    }
-
-    .pillar {
-      position: relative;
-      min-height: 610px;
-      padding: clamp(34px, 4vw, 60px);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .pillar.fit {
-      color: #fff;
-      background:
-        radial-gradient(circle at 100% 0%, rgba(148, 206, 79, .25), transparent 35%),
-        linear-gradient(145deg, #214e18, #4f851f);
-    }
-
-    .pillar.gong {
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.92);
-    }
-
-    .pillar-number {
-      position: absolute;
-      top: 28px;
-      right: 34px;
-      font-size: 50px;
-      font-weight: 900;
-      opacity: .12;
-    }
-
-    .pillar-icon {
-      width: 105px;
-      height: 105px;
-      margin-bottom: 34px;
-      display: grid;
-      place-items: center;
-      border-radius: 30px;
-      background: rgba(255,255,255,.14);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.15);
-    }
-
-    .gong .pillar-icon { background: var(--green-soft); }
-
-    .pillar-icon svg {
-      width: 62px;
-      height: 62px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 4;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .pillar-label {
-      margin-bottom: 16px;
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: .19em;
-      text-transform: uppercase;
-      opacity: .78;
-    }
-
-    .pillar p, .pillar li {
-      font-size: 18px;
-    }
-
-    .pillar ul {
-      margin: 28px 0 0;
-      padding-left: 23px;
-    }
-
-    .pillar li { margin-bottom: 12px; }
-
-    .pillar-note {
-      margin-top: 34px;
-      padding: 18px 21px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.15);
-      font-weight: 700;
-    }
-
-    .gong .pillar-note { background: var(--green-soft); }
-
-    /* CHEMIN */
-    .path {
-      background: #fff;
-    }
-
-    .path-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .path-card {
-      position: relative;
-      min-height: 370px;
-      padding: 38px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: linear-gradient(145deg, #fff, #fbfcf8);
-      box-shadow: 0 16px 40px rgba(30, 69, 37, .08);
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-
-    .path-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 52px rgba(30, 69, 37, .14);
-    }
-
-    .path-number {
-      display: block;
-      margin-bottom: 42px;
-      color: #8eb366;
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: .15em;
-    }
-
-    .path-card p {
-      color: var(--muted);
-      font-size: 19px;
-    }
-
-    /* ACCESSIBILITÉ */
-    .accessible {
-      position: relative;
-      color: #fff;
-      background:
-        linear-gradient(120deg, rgba(6,25,14,.97), rgba(22,74,29,.9)),
-        url("forest-bg.jpg") center / cover;
-    }
-
-    .accessible-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: clamp(45px, 7vw, 110px);
-      align-items: center;
-    }
-
-    .accessible h2 {
-      color: #fff;
-    }
-
-    .accessible .lead {
-      color: rgba(255,255,255,.82);
-    }
-
-    .audiences {
-      display: grid;
-      gap: 17px;
-    }
-
-    .audience {
-      padding: 24px 26px;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 20px;
-      background: rgba(255,255,255,.08);
-      backdrop-filter: blur(8px);
-    }
-
-    .audience h3 {
-      margin-bottom: 7px;
-      font-size: 23px;
-    }
-
-    .audience p {
-      margin: 0;
-      color: rgba(255,255,255,.78);
-      font-size: 17px;
-    }
-
-    /* CTA */
-    .cta {
-      text-align: center;
-      background: #f5f1e5;
-    }
-
-    .cta-inner {
-      max-width: 1050px;
-      margin: auto;
-      padding: clamp(55px, 7vw, 95px);
-      border-radius: 42px;
-      color: #fff;
-      background:
-        radial-gradient(circle at 80% 0%, rgba(144, 205, 71, .28), transparent 36%),
-        linear-gradient(135deg, #102d1b, #37691f);
-      box-shadow: var(--shadow);
-    }
-
-    .cta h2 {
-      color: #fff;
-    }
-
-    .cta p {
-      margin-bottom: 34px;
-      color: rgba(255,255,255,.82);
-      font-size: 20px;
-    }
-
-    .button {
-      display: inline-flex;
-      min-height: 56px;
-      align-items: center;
-      justify-content: center;
-      padding: 0 29px;
-      border-radius: 999px;
-      color: #17301a;
-      background: #fff;
-      text-decoration: none;
-      font-weight: 900;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(0,0,0,.2);
-    }
-
-    footer {
-      padding: 32px 24px;
-      text-align: center;
-      color: rgba(255,255,255,.65);
-      background: #07110b;
-    }
-
-    footer img {
-      width: 78px;
-      margin: 0 auto 10px;
-    }
-
-    footer p { margin: 0; }
-
-    @media (max-width: 1050px) {
-      .menu-toggle { display: block; }
-
-      .site-nav {
-        position: absolute;
-        top: calc(100% + 10px);
-        left: 12px;
-        right: 12px;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 12px;
-        border: 1px solid rgba(117, 169, 72, .4);
-        border-radius: 22px;
-        background: rgba(6, 14, 9, .98);
-      }
-
-      .site-nav.open { display: flex; }
-      .site-nav a { justify-content: center; }
-
-      .origin,
-      .story-grid,
-      .accessible-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .story-title { position: static; }
-      .pillars-grid { grid-template-columns: 1fr; }
-      .path-grid { grid-template-columns: 1fr; }
-      .pillar { min-height: auto; }
-    }
-
-    @media (max-width: 700px) {
-      .method-hero {
-        min-height: 520px;
-        background-position: center center;
-      }
-
-      .site-header {
-        top: 9px;
-        width: calc(100% - 18px);
-        min-height: 58px;
-        padding: 7px 10px 7px 18px;
-      }
-
-      main section:not(.method-hero) {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      .origin-photo::before {
-        inset: 15px -10px -10px 15px;
-      }
-
-      .pillar,
-      .path-card {
-        padding: 30px 25px;
-      }
-
-      .cta-inner {
-        padding: 48px 24px;
-        border-radius: 28px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header-premium.css?v=2">
+  <link rel="stylesheet" href="methode-v2.css?v=2">
 </head>
 
-<body>
-  <div class="site-shell">
+<body class="methode-v2-page">
 
-    <section class="method-hero" aria-label="La méthode ZifaFit">
-      <header class="site-header">
-        <a class="brand" href="index.html">Zifa<span>Fit</span></a>
+  <!-- Un seul menu : l'ancien menu intégré à l'image a été retiré par recadrage. -->
+  <header class="site-header methode-main-header">
+    <a class="brand" href="index.html">ZifaFit</a>
 
-        <button class="menu-toggle" type="button"
-                aria-label="Ouvrir le menu"
-                aria-expanded="false"
-                aria-controls="main-menu">
-          <span></span><span></span><span></span>
-        </button>
+    <button class="methode-menu-toggle"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="methode-menu">
+      <span></span><span></span><span></span>
+    </button>
 
-        <nav id="main-menu" class="site-nav" aria-label="Navigation principale">
-          <a href="index.html">Accueil</a>
-          <a href="methode.html" aria-current="page">La méthode</a>
-          <a href="collection-fondation.html">Zifa Fit</a>
-          <a href="zifa-gong.html">Zifa Gong</a>
-          <a href="index.html#videos">Vidéos</a>
-          <a href="index.html#apropos">À propos</a>
-        </nav>
-      </header>
+    <nav id="methode-menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="methode.html" aria-current="page">La méthode</a>
+      <a href="collection-fondation.html">Zifa Fit</a>
+      <a href="zifa-gong.html">Zifa Gong</a>
+      <a href="index.html#videos">Vidéos</a>
+      <a href="index.html#apropos">À propos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Le titre est déjà dans l'image : aucun texte ajouté par-dessus. -->
+    <section class="methode-v2-hero" aria-label="Bouger, respirer, progresser"></section>
+
+    <section class="methode-v2-origin">
+      <div class="methode-v2-photo">
+        <img src="jocelyn-zifafit.jpg" alt="Jocelyn Bérubé, fondateur de ZifaFit">
+      </div>
+
+      <div class="methode-v2-origin-copy">
+        <p class="methode-v2-eyebrow">L'origine de la méthode</p>
+        <h1>Créer une façon plus simple et plus humaine de progresser.</h1>
+
+        <p>Après 25 années de service dans les Forces armées canadiennes, j’ai appris que les résultats durables ne viennent pas seulement de l’intensité. Ils viennent aussi de la discipline, de l’adaptation et de la capacité à continuer malgré les périodes plus difficiles.</p>
+
+        <p>Le CrossFit m’a montré la puissance de l’entraînement fonctionnel. Mais j’ai aussi constaté que le coût, l’équipement et l’environnement d’une salle peuvent rendre cette pratique moins accessible à plusieurs personnes.</p>
+
+        <p>Je voulais donc conserver ce qui est efficace — des mouvements utiles, des séances structurées et une progression mesurable — tout en créant une méthode que l’on peut suivre à la maison ou dans la nature.</p>
+
+        <blockquote>
+          ZifaFit a été créé pour aider les gens à bâtir une pratique qu’ils peuvent réellement conserver dans leur vie.
+        </blockquote>
+      </div>
     </section>
 
-    <main>
-      <section class="origin">
-        <div class="origin-photo">
-          <img src="jocelyn-zifafit.jpg"
-               alt="Jocelyn Bérubé, fondateur de ZifaFit">
-        </div>
+    <section class="methode-v2-difference">
+      <div class="methode-v2-heading">
+        <p class="methode-v2-eyebrow">Ce qui rend ZifaFit différent</p>
+        <h2>Une méthode complète, sans compliquer l’entraînement.</h2>
+      </div>
 
-        <div class="origin-copy">
-          <p class="eyebrow">Pourquoi ZifaFit?</p>
-          <h2>Deux univers qui deviennent une seule méthode.</h2>
+      <div class="methode-v2-difference-grid">
+        <article>
+          <span>01</span>
+          <h3>Des séances organisées</h3>
+          <p>Chaque collection suit une logique claire afin que tu saches quoi faire, dans quel ordre et pourquoi.</p>
+        </article>
 
-          <p>Le CrossFit m’a appris à développer ma force, ma discipline et ma condition physique. Le Zifa Gong m’a appris à ralentir, à mieux respirer et à retrouver mon équilibre.</p>
+        <article>
+          <span>02</span>
+          <h3>Des options réalistes</h3>
+          <p>Les exercices peuvent être adaptés selon ton niveau, ta mobilité, ton énergie et le matériel disponible.</p>
+        </article>
 
-          <p>Avec le temps, j’ai compris que ces deux pratiques ne s’opposaient pas. L’une met le corps en action. L’autre permet à l’esprit et au système nerveux de revenir au calme.</p>
+        <article>
+          <span>03</span>
+          <h3>Une progression visible</h3>
+          <p>Tu avances d’une étape à l’autre en développant la force, la régularité et la confiance.</p>
+        </article>
+      </div>
+    </section>
 
-          <div class="quote">
-            ZifaFit n’est pas une course contre les autres. C’est une méthode pour devenir plus fort, plus calme et plus constant, à son propre rythme.
-          </div>
-        </div>
-      </section>
+    <section class="methode-v2-components">
+      <div class="methode-v2-heading">
+        <p class="methode-v2-eyebrow">Les deux composantes</p>
+        <h2>Une partie active. Une partie de recentrage.</h2>
+        <p>La page Zifa Gong explique cette pratique en détail. Ici, l’objectif est simplement de montrer comment elle complète l’entraînement dans la méthode ZifaFit.</p>
+      </div>
 
-      <section class="story">
-        <div class="story-grid">
-          <div class="story-title">
-            <p class="eyebrow">Mon parcours</p>
-            <h2>Rendre le mouvement et le bien-être accessibles.</h2>
-          </div>
+      <div class="methode-v2-components-grid">
+        <article class="methode-v2-component methode-v2-training">
+          <p class="methode-v2-small-label">Composante 1</p>
+          <h3>L’entraînement ZifaFit</h3>
+          <p>Une collection de séances fonctionnelles conçues pour développer les capacités physiques utiles au quotidien.</p>
 
-          <div class="story-copy">
-            <p>Tout le monde devrait pouvoir devenir plus fort, mieux respirer et retrouver son équilibre, peu importe son âge, son expérience ou son budget. Pourtant, ce n’est pas toujours le cas.</p>
+          <ul>
+            <li>Force et endurance</li>
+            <li>Mobilité et contrôle</li>
+            <li>Formats variés</li>
+            <li>Progression adaptée</li>
+          </ul>
 
-            <p>Le CrossFit est une méthode d’entraînement extraordinaire, mais les cours en salle peuvent être coûteux et demander beaucoup d’équipement. Pour plusieurs personnes, cette façon de s’entraîner demeure difficilement accessible.</p>
+          <a href="collection-fondation.html">Découvrir Fondation</a>
+        </article>
 
-            <p>J’ai constaté un défi semblable avec des disciplines comme le tai-chi et le qigong. Leurs bienfaits sont remarquables, mais leurs longues routines peuvent demander beaucoup de temps avant d’être maîtrisées.</p>
+        <article class="methode-v2-component methode-v2-reset">
+          <p class="methode-v2-small-label">Composante 2</p>
+          <h3>Le retour au centre</h3>
+          <p>Après l’effort, une courte pratique de Zifa Gong aide à terminer la séance de façon plus posée et cohérente.</p>
 
-            <p>Après <strong>25 années de service dans les Forces armées canadiennes</strong>, j’ai compris que le corps et l’esprit progressent mieux lorsqu’ils travaillent ensemble. Je voulais créer une méthode simple réunissant ces deux univers.</p>
+          <ul>
+            <li>Transition après l’effort</li>
+            <li>Relâchement des tensions</li>
+            <li>Attention au corps</li>
+            <li>Fin de séance structurée</li>
+          </ul>
 
-            <p><strong>C’est ainsi qu’est né ZifaFit :</strong> un entraînement fonctionnel inspiré du CrossFit, réalisable avec peu ou pas d’équipement, suivi d’une pratique de Zifa Gong pour respirer, relâcher les tensions et retrouver son équilibre.</p>
+          <a href="zifa-gong.html">Voir la page Zifa Gong</a>
+        </article>
+      </div>
+    </section>
 
-            <p><strong>Mon objectif est simple : rendre la force, le mouvement et le bien-être accessibles à tous.</strong></p>
+    <!-- Le parcours ascendant demandé -->
+    <section class="methode-v2-path">
+      <div class="methode-v2-heading">
+        <p class="methode-v2-eyebrow">Le parcours ZifaFit</p>
+        <h2>Chaque étape prépare la suivante.</h2>
+        <p>Le graphique monte volontairement : la méthode est conçue comme un chemin de développement, pas comme une séance isolée.</p>
+      </div>
 
-            <span class="signature">— Jocelyn Bérubé, fondateur de ZifaFit</span>
-          </div>
-        </div>
-      </section>
+      <div class="methode-v2-path-graphic">
+        <div class="methode-v2-path-line" aria-hidden="true"></div>
 
-      <section class="pillars">
-        <div class="section-heading">
-          <p class="eyebrow">Les deux piliers</p>
-          <h2>Le corps travaille.<br>L’esprit récupère.</h2>
-          <p class="lead">Deux pratiques complémentaires, réunies dans un parcours simple et cohérent.</p>
-        </div>
-
-        <div class="pillars-grid">
-          <article class="pillar fit">
-            <span class="pillar-number">01</span>
-            <div class="pillar-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64">
-                <circle cx="31" cy="11" r="6"></circle>
-                <path d="M22 25l9-7 10 5 8 9"></path>
-                <path d="M28 24l-7 12-10 4"></path>
-                <path d="M35 27l-2 13 12 10"></path>
-                <path d="M27 38l-7 13"></path>
-              </svg>
-            </div>
-
-            <p class="pillar-label">Pilier 1</p>
-            <h3>Entraînement ZifaFit</h3>
-            <p>Des collections évolutives de dix entraînements pour développer la force, l’endurance, la mobilité et la confiance.</p>
-
-            <ul>
-              <li>Peu ou pas d’équipement</li>
-              <li>Plusieurs formats d’entraînement</li>
-              <li>Options pour différents niveaux</li>
-              <li>Progression à son propre rythme</li>
-            </ul>
-
-            <div class="pillar-note">Collection actuelle : <strong>Fondation</strong></div>
-          </article>
-
-          <article class="pillar gong">
-            <span class="pillar-number">02</span>
-            <div class="pillar-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64">
-                <circle cx="32" cy="13" r="7"></circle>
-                <path d="M23 28c2-6 16-6 18 0"></path>
-                <path d="M20 34c4 1 8 5 12 10 4-5 8-9 12-10"></path>
-                <path d="M14 46c8-8 14-5 18 0 4-5 10-8 18 0"></path>
-                <path d="M17 51c8 4 22 4 30 0"></path>
-              </svg>
-            </div>
-
-            <p class="pillar-label">Pilier 2</p>
-            <h3>Zifa Gong</h3>
-            <p>Une pratique permanente, debout ou assise, pour respirer, observer, relâcher les tensions et retrouver son équilibre.</p>
-
-            <ul>
-              <li>Respiration consciente</li>
-              <li>Mobilité douce</li>
-              <li>Présence et concentration</li>
-              <li>Retour au calme</li>
-            </ul>
-
-            <div class="pillar-note">Une pratique stable qui accompagne toutes les collections.</div>
-          </article>
-        </div>
-      </section>
-
-      <section class="path">
-        <div class="section-heading">
-          <p class="eyebrow">La philosophie</p>
-          <h2>Un chemin en trois étapes.</h2>
-          <p class="lead">Chaque séance est pensée pour créer un équilibre durable entre l’effort, la récupération et la progression.</p>
-        </div>
-
-        <div class="path-grid">
-          <article class="path-card">
-            <span class="path-number">01</span>
-            <h3>Bouger</h3>
-            <p>Activer le corps, développer ses capacités et retrouver le plaisir de l’effort avec une séance claire et guidée.</p>
-          </article>
-
-          <article class="path-card">
-            <span class="path-number">02</span>
-            <h3>Respirer</h3>
-            <p>Ralentir après l’effort, observer ses sensations, relâcher les tensions et ramener le système au calme.</p>
-          </article>
-
-          <article class="path-card">
-            <span class="path-number">03</span>
-            <h3>Progresser</h3>
-            <p>Construire une pratique durable, développer sa confiance et avancer avec constance sans se comparer aux autres.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="accessible">
-        <div class="accessible-grid">
+        <article class="methode-v2-path-step step-1">
+          <div class="methode-v2-path-dot">1</div>
           <div>
-            <p class="eyebrow">Pour qui?</p>
-            <h2>Une méthode conçue pour la vraie vie.</h2>
-            <p class="lead">ZifaFit n’est pas réservé aux athlètes. La méthode s’adapte à ton point de départ, à ton rythme et à ton environnement.</p>
+            <p class="methode-v2-small-label">Commencer</p>
+            <h3>Bouger avec confiance</h3>
+            <p>Apprendre les mouvements, choisir les bonnes adaptations et créer une première routine.</p>
           </div>
+        </article>
 
-          <div class="audiences">
-            <article class="audience">
-              <h3>Pour recommencer</h3>
-              <p>Une structure rassurante pour retrouver progressivement le plaisir de bouger.</p>
-            </article>
-
-            <article class="audience">
-              <h3>Pour compléter son entraînement</h3>
-              <p>Une façon d’ajouter mobilité, respiration et récupération à une pratique déjà active.</p>
-            </article>
-
-            <article class="audience">
-              <h3>Pour s’entraîner simplement</h3>
-              <p>Des séances accessibles à la maison ou dans la nature, avec peu ou pas d’équipement.</p>
-            </article>
+        <article class="methode-v2-path-step step-2">
+          <div class="methode-v2-path-dot">2</div>
+          <div>
+            <p class="methode-v2-small-label">Construire</p>
+            <h3>Devenir plus constant</h3>
+            <p>Répéter les séances, mieux connaître ses capacités et réduire les longues interruptions.</p>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <section class="cta">
-        <div class="cta-inner">
-          <p class="eyebrow">Commencer le parcours</p>
-          <h2>Bouger. Respirer. Progresser.</h2>
-          <p>Découvre Fondation, la première collection d’entraînements ZifaFit.</p>
-          <a class="button" href="collection-fondation.html">Découvrir la collection Fondation</a>
-        </div>
-      </section>
-    </main>
+        <article class="methode-v2-path-step step-3">
+          <div class="methode-v2-path-dot">3</div>
+          <div>
+            <p class="methode-v2-small-label">Développer</p>
+            <h3>Gagner en capacité</h3>
+            <p>Augmenter graduellement le contrôle, la force, l’endurance et la qualité des mouvements.</p>
+          </div>
+        </article>
 
-    <footer>
-      <img src="logo.png" alt="Logo ZifaFit">
-      <p>© 2026 ZifaFit — Tous droits réservés.</p>
-    </footer>
-  </div>
+        <article class="methode-v2-path-step step-4">
+          <div class="methode-v2-path-dot">4</div>
+          <div>
+            <p class="methode-v2-small-label">Continuer</p>
+            <h3>Faire de ZifaFit une habitude durable</h3>
+            <p>Utiliser les nouvelles collections pour continuer à évoluer sans perdre la simplicité de la méthode.</p>
+          </div>
+        </article>
+
+        <div class="methode-v2-path-summit" aria-label="Progression">
+          <span>↗</span>
+          <strong>Progression durable</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="methode-v2-for-who">
+      <div>
+        <p class="methode-v2-eyebrow">Une méthode adaptable</p>
+        <h2>Ton point de départ n’a pas besoin d’être parfait.</h2>
+        <p>ZifaFit peut servir à reprendre l’entraînement, à compléter une pratique déjà active ou à maintenir une routine plus simple pendant les périodes occupées.</p>
+      </div>
+
+      <div class="methode-v2-for-who-list">
+        <article>
+          <h3>Tu recommences</h3>
+          <p>Tu peux utiliser les options les plus accessibles et développer une base progressivement.</p>
+        </article>
+
+        <article>
+          <h3>Tu es déjà actif</h3>
+          <p>Tu peux augmenter l’intensité et utiliser ZifaFit comme entraînement complémentaire.</p>
+        </article>
+
+        <article>
+          <h3>Tu veux être autonome</h3>
+          <p>Tu disposes d’une structure claire que tu peux suivre sans dépendre d’un horaire de salle.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="methode-v2-cta">
+      <p class="methode-v2-eyebrow">Première étape</p>
+      <h2>Commence par bâtir ta fondation.</h2>
+      <p>La collection Fondation présente les premiers entraînements de la méthode ZifaFit.</p>
+      <a href="collection-fondation.html">Découvrir la collection Fondation</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.png" alt="" class="footer-logo">
+    <p>© 2026 ZifaFit — Tous droits réservés.</p>
+  </footer>
 
   <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".site-nav");
+    const toggle = document.querySelector(".methode-menu-toggle");
+    const menu = document.querySelector(".methode-main-header nav");
 
     toggle.addEventListener("click", () => {
-      const isOpen = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!isOpen));
-      menu.classList.toggle("open");
+      const opened = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!opened));
+      menu.classList.toggle("is-open");
     });
   </script>
 </body>
