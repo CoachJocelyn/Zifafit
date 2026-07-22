@@ -10,24 +10,31 @@
 </head>
 <body>
 <main>
-    <section class="method-hero">
-      <header class="site-header">
-          <a class="brand" href="index.html">ZifaFit</a>
-          <nav aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="methode.html" aria-current="page">La méthode</a>
-        <a href="collection-fondation.html">Zifa Fit</a>
-        <a href="zifa-gong.html">Zifa Gong</a>
-        <a href="index.html#videos">Vidéos</a>
-        <a href="index.html#apropos">À propos</a>
+    <section class="method-cinematic-hero" aria-label="La méthode ZifaFit">
+      <img class="method-cinematic-image" src="methode-hero-cinematic.png" alt="Bouger, respirer et progresser dans une forêt ZifaFit">
+
+      <!-- Liens invisibles placés sur les boutons visibles dans l’image -->
+      <nav class="method-cinematic-links" aria-label="Navigation principale">
+        <a class="hotspot home" href="index.html" aria-label="Accueil"></a>
+        <a class="hotspot method" href="methode.html" aria-label="La méthode" aria-current="page"></a>
+        <a class="hotspot fit" href="collection-fondation.html" aria-label="Zifa Fit"></a>
+        <a class="hotspot gong" href="zifa-gong.html" aria-label="Zifa Gong"></a>
+        <a class="hotspot videos" href="index.html#videos" aria-label="Vidéos"></a>
+        <a class="hotspot about" href="index.html#apropos" aria-label="À propos"></a>
       </nav>
-        </header>
-      <div class="method-hero-bg" aria-hidden="true"></div>
-      <div class="method-hero-content">
-        <p class="hero-kicker">La méthode ZifaFit</p>
-        <h1>Bouger. Respirer. Progresser.</h1>
-        <p>Une approche qui unit le mouvement, la respiration et la progression pour développer un corps plus fort et un esprit plus calme.</p>
-      </div>
+
+      <!-- Navigation mobile réelle -->
+      <header class="method-mobile-header">
+        <a class="method-mobile-brand" href="index.html">Zifa<span>Fit</span></a>
+        <nav aria-label="Navigation mobile">
+          <a href="index.html">Accueil</a>
+          <a class="active" href="methode.html">La méthode</a>
+          <a href="collection-fondation.html">Zifa Fit</a>
+          <a href="zifa-gong.html">Zifa Gong</a>
+          <a href="index.html#videos">Vidéos</a>
+          <a href="index.html#apropos">À propos</a>
+        </nav>
+      </header>
     </section>
 
     <section class="method-story">
