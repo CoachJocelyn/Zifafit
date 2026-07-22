@@ -1,1 +1,1 @@
-Remplace seulement le fichier index.html de ton site par celui-ci. Les trois icônes Bouger, Respirer et Progresser ont été redessinées dans le même style vert que le reste du site.
+Remplace index.html et style.css, puis ajoute les 3 images PNG dans le même dossier que index.html.
