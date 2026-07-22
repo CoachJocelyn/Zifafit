@@ -1,1 +1,9 @@
-Remplace index.html et style.css, puis ajoute les 3 images PNG dans le même dossier que index.html.
+REMPLACE EXACTEMENT CES 5 FICHIERS À LA RACINE DU SITE :
+- index.html
+- premium-home.css
+- icon-bouger-3d.png
+- icon-respirer-3d.png
+- icon-progresser-3d.png
+
+Ne remplace pas style.css cette fois-ci.
+Après l’envoi, fais Ctrl + F5 pour vider le cache du navigateur.

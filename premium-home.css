@@ -393,3 +393,51 @@
   }
   .site-header .brand{font-size:1.22rem}
 }
+
+
+/* ===== Cartes accueil : illustrations 3D ZifaFit ===== */
+.discover-card {
+  overflow: hidden;
+}
+
+.discover-card .card-icon.card-icon-3d {
+  width: 100% !important;
+  height: 165px !important;
+  margin: 0 0 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+.discover-card .card-icon.card-icon-3d img {
+  display: block !important;
+  width: auto !important;
+  max-width: 94% !important;
+  height: 155px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 15px 14px rgba(36, 71, 18, .20));
+  transition: transform .28s ease, filter .28s ease;
+}
+
+.discover-card:hover .card-icon.card-icon-3d img {
+  transform: translateY(-5px) scale(1.035);
+  filter: drop-shadow(0 20px 18px rgba(36, 71, 18, .27));
+}
+
+.discover-card .number {
+  z-index: 3;
+}
+
+@media (max-width: 800px) {
+  .discover-card .card-icon.card-icon-3d {
+    height: 145px !important;
+  }
+
+  .discover-card .card-icon.card-icon-3d img {
+    height: 138px !important;
+  }
+}
