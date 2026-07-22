@@ -1,15 +1,14 @@
-REMPLACE SEULEMENT CES 3 FICHIERS À LA RACINE DU SITE :
+REMPLACE SEULEMENT CES 2 FICHIERS À LA RACINE DU SITE :
 
 1. methode.html
 2. methode-v2.css
-3. methode-hero-parcours.png
 
-Ce qui a été corrigé :
-- Un seul menu en haut.
-- Le menu qui était imprimé dans l’image a été retiré par recadrage.
-- Aucun texte de bannière ajouté par-dessus l’image.
-- Le texte de la page ne répète plus le contenu détaillé de la page Zifa Gong.
-- Retour du graphique ascendant du parcours ZifaFit.
-- Ordre du menu : Accueil, La méthode, Zifa Fit, Zifa Gong, Vidéos, À propos.
+Corrections :
+- Barre de navigation noire comme sur la page d’accueil.
+- « La méthode » reste sélectionné en vert.
+- Texte blanc bien visible dans le menu.
+- Le mot « composante » a été remplacé par « pilier ».
+- Le graphique ascendant du parcours est conservé.
+- L’image de bannière ne change pas.
 
-Après le téléversement, fais Ctrl + F5.
+Après le téléversement : Ctrl + F5.
