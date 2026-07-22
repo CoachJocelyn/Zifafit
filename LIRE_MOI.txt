@@ -1,6 +1,11 @@
-Remplace seulement ces deux fichiers à la racine de ton site :
-- methode.html
-- methode-hero-cinematic.png
+REMPLACER UNIQUEMENT CES DEUX FICHIERS À LA RACINE DU SITE :
 
-Le fichier garde ton style.css et header-premium.css déjà en place.
-Après l’envoi, fais Ctrl + F5.
+1. methode.html
+2. methode-hero-cinematic.png
+
+IMPORTANT :
+- Le titre de la bannière est déjà intégré à l’image.
+- Le code n’ajoute donc aucun deuxième titre par-dessus.
+- Le CSS est directement intégré à methode.html pour éviter les pages sans style.
+- L’ordre du menu est : Accueil, La méthode, Zifa Fit, Zifa Gong, Vidéos, À propos.
+- Après le téléversement, faire Ctrl + F5.
