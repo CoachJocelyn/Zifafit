@@ -79,3 +79,50 @@
   .zg-identity-grid{grid-template-columns:1fr}
   .zg-identity-plus{text-align:center}
 }
+
+/* Mise à jour bannière Zifa Gong : image complète, sans texte ni boutons superposés */
+.zg-hero{
+  position:relative;
+  min-height:0;
+  display:block;
+  overflow:hidden;
+  background:#050805;
+}
+.zg-hero-image{
+  position:relative;
+  inset:auto;
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center top;
+}
+.zg-hero > .site-header{
+  position:absolute;
+  top:14px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:20;
+  width:min(1780px,calc(100% - 32px));
+  margin:0;
+  padding:10px 20px;
+  border:1px solid rgba(180,224,128,.22);
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(15,22,16,.88),rgba(5,10,7,.92));
+  box-shadow:0 16px 38px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+@media(max-width:800px){
+  .zg-hero > .site-header{
+    top:8px;
+    width:calc(100% - 16px);
+    padding:10px 14px;
+    border-radius:20px;
+  }
+  .zg-hero-image{
+    width:100%;
+    min-height:0;
+    object-fit:contain;
+  }
+}
