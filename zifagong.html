@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zifa Gong | ZifaFit</title>
+  <link rel="stylesheet" href="zifa-gong-banner.css" />
+</head>
+<body>
+
+  <!-- BANNIÈRE ZIFA GONG -->
+  <section class="zifa-hero">
+
+    <header class="zifa-navbar">
+      <a class="zifa-logo" href="index.html">ZifaFit</a>
+
+      <button class="zifa-menu-button"
+              type="button"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="zifa-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="zifa-menu" class="zifa-menu" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="methode.html">La méthode</a>
+        <a href="zifafit.html">Zifa Fit</a>
+        <a class="active" href="zifagong.html" aria-current="page">Zifa Gong</a>
+        <a href="videos.html">Vidéos</a>
+        <a href="apropos.html">À propos</a>
+      </nav>
+    </header>
+
+    <img
+      class="zifa-hero-image"
+      src="zifa-gong-banner.png"
+      alt="Zifa Gong, méditation et retour au calme dans la nature"
+    />
+
+  </section>
+
+  <!-- Le contenu normal de ta page commence ici -->
+  <main class="page-content">
+    <!-- Colle ici le reste de ta page Zifa Gong -->
+  </main>
+
+  <script>
+    const button = document.querySelector(".zifa-menu-button");
+    const menu = document.querySelector(".zifa-menu");
+
+    button.addEventListener("click", () => {
+      const open = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!open));
+      menu.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>
