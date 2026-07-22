@@ -1,9 +1,9 @@
-REMPLACE EXACTEMENT CES 5 FICHIERS À LA RACINE DU SITE :
-- index.html
-- premium-home.css
-- icon-bouger-3d.png
-- icon-respirer-3d.png
-- icon-progresser-3d.png
+CORRECTION PAGE LA MÉTHODE
 
-Ne remplace pas style.css cette fois-ci.
-Après l’envoi, fais Ctrl + F5 pour vider le cache du navigateur.
+Remplace seulement ces 2 fichiers à la racine du site :
+- methode.html
+- methode-hero-cinematic.png
+
+Cette version contient directement tout le CSS dans methode.html. Elle ne dépend plus de style.css ni de header-premium.css, donc la page ne peut plus s'afficher sans style si un fichier CSS manque ou reste en cache.
+
+Après l'envoi, fais Ctrl + F5.
