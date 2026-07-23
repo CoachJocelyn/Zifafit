@@ -1,0 +1,12 @@
+ZIFAFIT — MISE À JOUR V1
+
+Modifications ciblées et sécuritaires :
+- Page Zifa Gong recentrée sur la pratique, sans répéter l’histoire de La méthode.
+- Terminologie française uniformisée : Collection Fondation.
+- Navigation du programme personnalisé harmonisée avec les autres pages.
+- Ancienne page zifagong.html transformée en redirection vers zifa-gong.html.
+- Titres, descriptions, URL canoniques et balises de partage social ajoutés aux pages principales.
+- Chargement différé ajouté aux images non essentielles.
+- Petites améliorations d’accessibilité et de cohérence rédactionnelle.
+
+Aucune image, identité visuelle, formulaire ou structure majeure n’a été supprimé.
