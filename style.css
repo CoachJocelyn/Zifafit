@@ -1542,3 +1542,29 @@ nav a[aria-current="page"]{color:#4f7f22}
   .card-icon.card-icon-3d{height:135px}
   .card-icon.card-icon-3d img{height:130px}
 }
+
+
+/* ===== Pré-lancement, sécurité et pied de page juridique ===== */
+.launch-notice{display:flex;align-items:center;justify-content:center;gap:14px;padding:16px 7vw;background:#173f24;color:#fff;text-align:center;line-height:1.45}
+.launch-notice strong{flex:0 0 auto;padding:6px 10px;border-radius:999px;background:#76a94b;color:#102a18;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}
+.launch-notice span{max-width:1050px}
+.training-safety-note{padding:30px 7vw;background:#fff7e3;border-top:1px solid #ead9a5;border-bottom:1px solid #ead9a5;text-align:center}
+.training-safety-note h2{margin:0 0 8px;color:#523b0a;font-size:1.15rem}
+.training-safety-note p{max-width:1100px;margin:0 auto;color:#544a36;line-height:1.6}
+.pp-launch-notice{margin-top:0}
+.pp-price-coming{font-size:1.65rem!important;line-height:1.15}
+.pp-form-disabled{position:relative;opacity:.86}
+.pp-disabled-fieldset{min-width:0;margin:0!important;padding:0!important;border:0!important}
+.pp-submit:disabled{cursor:not-allowed;opacity:.65}
+.site-footer{padding:34px 7vw;background:#102317;color:#edf5eb;text-align:center}
+.footer-main{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.site-footer .footer-logo{max-height:58px;width:auto}
+.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:18px 0 12px}
+.footer-links a{color:#edf5eb;text-decoration:underline;text-underline-offset:3px}
+.footer-note{max-width:900px;margin:0 auto;color:#bdcbbb;font-size:.82rem;line-height:1.5}
+.legal-page{max-width:980px;margin:0 auto;padding:120px 24px 80px;color:#273126}
+.legal-page h1{color:#174b25;font-size:clamp(2.2rem,5vw,4rem)}
+.legal-page h2{margin-top:34px;color:#215d2d}
+.legal-page p,.legal-page li{line-height:1.7}
+.legal-callout{padding:18px 20px;border-left:5px solid #6e9f45;border-radius:8px;background:#edf4e8}
+@media(max-width:700px){.launch-notice{align-items:stretch;flex-direction:column;padding:16px 22px}.footer-main{flex-direction:column}.legal-page{padding-top:100px}}

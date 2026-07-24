@@ -20,7 +20,7 @@
 <a href="index.html#apropos">À propos</a>
 </nav>
 </header>
-<main>
+<main><section class="launch-notice pp-launch-notice"><strong>Service en préparation</strong><span>Les programmes personnalisés ne sont pas encore offerts. Les demandes ouvriront après la mise en place de la certification, de l’assurance et des formulaires de consentement.</span></section>
 <section class="pp-hero">
 <div class="pp-hero-shade"></div>
 <div class="pp-hero-content">
@@ -31,7 +31,7 @@
           votre équipement et le temps dont vous disposez.
         </p>
 <div class="pp-hero-actions">
-<a class="pp-primary" href="#questionnaire">Commencer le questionnaire</a>
+<a class="pp-primary" href="#questionnaire">Voir les informations</a>
 <a class="pp-secondary" href="#fonctionnement">Voir comment ça fonctionne</a>
 </div>
 </div>
@@ -48,9 +48,9 @@
         </p>
 </div>
 <aside class="pp-price-card">
-<p class="pp-price-label">Tarif de lancement</p>
-<p class="pp-price"><span>79</span> $ CA</p>
-<p class="pp-price-note">Paiement demandé seulement après l’acceptation de votre demande.</p>
+<p class="pp-price-label">Ouverture prochaine</p>
+<p class="pp-price pp-price-coming">Bientôt disponible</p>
+<p class="pp-price-note">Aucune demande ni aucun paiement ne sont acceptés pour le moment.</p>
 <ul>
 <li>Programme personnalisé en PDF</li>
 <li>Progression claire et structurée</li>
@@ -59,7 +59,7 @@
 <li>Intégration du Zifa Gong</li>
 <li>Une question de suivi par courriel</li>
 </ul>
-<a class="pp-primary pp-full" href="#questionnaire">Demander mon programme</a>
+<a class="pp-primary pp-full" href="#questionnaire">Service bientôt disponible</a>
 </aside>
 </section>
 <section class="pp-benefits">
@@ -119,12 +119,11 @@
 <p class="pp-eyebrow">Questionnaire initial</p>
 <h2>Parlez-moi de votre situation.</h2>
 <p>
-          Ce questionnaire sert à préparer votre demande. En cliquant sur
-          « Envoyer ma demande », votre application de courriel ouvrira un
+          Ce questionnaire montre les renseignements qui seront demandés au lancement. Il est actuellement désactivé et aucun renseignement ne peut être envoyé.
           message prérempli avec vos réponses.
         </p>
 </div>
-<form class="pp-form" id="zifafitQuestionnaire">
+<form class="pp-form pp-form-disabled" id="zifafitQuestionnaire" aria-disabled="true"><fieldset disabled class="pp-disabled-fieldset">
 <div class="pp-form-grid">
 <label>
             Nom complet
@@ -221,8 +220,8 @@
 <input name="consentement" required="" type="checkbox"/>
           Je comprends que ZifaFit ne remplace pas un médecin, un physiothérapeute ou un autre professionnel de la santé.
         </label>
-<button class="pp-primary pp-submit" type="submit">Envoyer ma demande</button>
-<p class="pp-form-note">Aucun paiement n’est demandé par ce formulaire.</p>
+</fieldset><button class="pp-primary pp-submit" type="button" disabled>Demandes bientôt disponibles</button>
+<p class="pp-form-note">Le formulaire est présenté à titre d’aperçu seulement.</p>
 </form>
 </section>
 <section class="pp-disclaimer">
@@ -235,54 +234,11 @@
       </p>
 </section>
 </main>
-<footer>
-<img alt="" class="footer-logo" src="logo.png"/>
-<p>© 2026 ZifaFit — Tous droits réservés.</p>
+<footer class="site-footer">
+<div class="footer-main"><img alt="Logo ZifaFit" class="footer-logo" src="logo.png"/><p>© 2026 ZifaFit — Tous droits réservés.</p></div>
+<nav aria-label="Informations juridiques" class="footer-links"><a href="conditions-utilisation.html">Conditions d’utilisation</a><a href="avis-sante.html">Avis santé et sécurité</a><a href="politique-confidentialite.html">Politique de confidentialité</a><a href="mailto:zifafit@outlook.com">Contact</a></nav>
+<p class="footer-note">ZifaFit propose du contenu général de conditionnement physique. Respectez vos limites et obtenez un avis professionnel lorsque votre état de santé le justifie.</p>
 </footer>
-<script>
-    document.getElementById('zifafitQuestionnaire').addEventListener('submit', function(event) {
-      event.preventDefault();
 
-      const data = new FormData(this);
-      const value = (name) => data.get(name) || 'Non précisé';
-      const checked = (name) => data.get(name) ? 'Oui' : 'Non';
-
-      const subject = encodeURIComponent('Demande de programme personnalisé ZifaFit — ' + value('nom'));
-
-      const body = encodeURIComponent(
-`Bonjour Jocelyn,
-
-Je souhaite faire une demande de programme personnalisé ZifaFit.
-
-INFORMATIONS
-Nom : ${value('nom')}
-Courriel : ${value('courriel')}
-Âge : ${value('age')}
-Niveau : ${value('niveau')}
-
-OBJECTIF ET DISPONIBILITÉ
-Objectif principal : ${value('objectif')}
-Fréquence : ${value('frequence')}
-Durée par séance : ${value('duree')}
-Équipement : ${value('equipement')}
-
-SANTÉ ET SÉCURITÉ
-Douleur, blessure ou limitation : ${checked('douleur')}
-Condition médicale ou médication : ${checked('condition')}
-Avis professionnel déjà recommandé : ${checked('autorisation')}
-
-Détails des limitations :
-${value('limitations')}
-
-EXPÉRIENCE ET OBJECTIFS
-${value('commentaires')}
-
-Je comprends que ZifaFit ne remplace pas un professionnel de la santé.
-
-Merci.`);
-
-      window.location.href = 'mailto:zifafit@outlook.com?subject=' + subject + '&body=' + body;
-    });
-  </script>
 </body>
 </html>
