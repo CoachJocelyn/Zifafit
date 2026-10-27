@@ -1,2 +1,0 @@
-# Zifafit
-Official ZifaFit website
